@@ -1,0 +1,60 @@
+@import "mixins";
+@import "styling";
+
+body { 
+	font-family: $fonts-body;
+	border-top: 1px dashed $orange;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: $fonts-heading; }
+
+header { 
+	text-align: center;
+	border: 0;
+	@include background-gradient($cloud, $white);
+}
+.navbar-top {
+	background-color: transparent;
+	background-image: none;
+	box-shadow: none;
+	border-radius: 0;
+	border: 0;
+}
+.brand {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	color: $cherry;
+	font-family: $fonts-heading;
+}
+.brand:hover {
+	text-decoration: none;
+	color: $orange;
+}
+
+.main-menu {
+	margin: 0 auto;
+	font-family: $fonts-heading;
+}
+.main-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.main-menu ul li {
+	display: inline-block;
+}
+.main-menu ul li a {
+	display: block;
+	padding: .5em 1em;
+	color: $cherry;
+	text-transform: uppercase;
+	@include transition(all, .5s, ease-in);
+}
+.main-menu ul li a:hover {
+	text-decoration: none;
+	color: $green;
+	@include transition(all, .5s, ease-in);
+}

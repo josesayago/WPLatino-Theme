@@ -1,0 +1,58 @@
+@import "mixins";
+@import "styling";
+
+footer {
+	margin: 1em 0 0 0;
+}
+footer nav {
+	margin: 0;
+	padding: 0;
+}
+footer .navbar-bottom ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+footer .navbar-bottom ul li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+footer .navbar-bottom ul li a {
+	margin: .5em 0;
+	text-decoration: none;
+	display: block;
+	font-family: $fonts-heading;
+	font-size: .8em;
+	text-transform: uppercase;
+	color: $green;
+	@include transition(all, .5s, ease-in);
+}
+footer .navbar-bottom ul li a:hover {
+	color: $cherry;
+	@include transition(all, .5s, ease-in);
+}
+footer .col-right .copyright {
+	color: rgba($green,.4);
+	text-transform: uppercase;
+	font-size: .7em;
+	text-align: right;
+}
+footer .col-right .copyright a.telf {
+	font-size: 1.5em;
+	color: $cherry;
+	@include transition(all, .5s, ease-in);
+}
+footer .col-right .copyright a.telf:hover {
+	color: $orange;
+	@include transition(all, .5s, ease-in);
+	text-decoration: none;
+}
+@media (max-width: 768px) {
+	footer .col-xs-12 {
+		text-align: center;
+	}
+	footer .col-right .copyright {
+		text-align: center;
+	}
+}

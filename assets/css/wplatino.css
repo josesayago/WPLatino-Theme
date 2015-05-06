@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/**
+ * WP Latino
+ *
+ * Main Stylesheet
+ */
+@import url(http://fonts.googleapis.com/css?family=Quicksand|Molengo);
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+  Mixins available:
+    -   css3-prefix             - arguments: Property, Value
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-horizontal   - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-radial       - arguments: Start Color: #FFFFFF, Start position: 0%, End Color: #000000, End position: 100%
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   background-opacity      - arguments: Color: #000, Opacity: .85
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Right: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   transform               - arguments: Parameters: null
+    -   transform-style         - arguments: Style: preserve-3d
+    -   transition              - Default arguments: What: all, Length: 1s, Easing: ease-in-out
+    -                            - Examples: @include transition (all 2s ease-in-out);
+    -                                        @include transition (opacity 1s ease-in 2s, width 2s ease-out);
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+    -   keyframes               - arguments: Animation name
+                                - content:   Animation css
+    -   animation               - arguments: name duration timing-function delay iteration-count direction fill-mode play-state
+                                             (http://www.w3schools.com/cssref/css3_pr_animation.asp)
+
+------------------------------------------------------------- */
+/* ADDS A BROWSER PREFIX TO THE PROPERTY */
+/* BACKGROUND GRADIENT */
+/* BACKGROUND HORIZONTAL */
+/* BACKGROUND RADIAL */
+/* BACKGROUND SIZE */
+/* BACKGROUND COLOR OPACITY */
+/* BORDER RADIUS */
+/* BOX */
+/* BOX RGBA */
+/* BOX SHADOW */
+/* BOX SIZING */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TRANSFORM  */
+/* TRANSFORM STYLE */
+/* TRANSITION */
+/* TRIPLE BORDERS */
+/* KEYFRAMES */
+/* ANIMATION */
+body {
+  font-family: "Molengo", "Times New Roman", serif;
+  border-top: 1px dashed #f18d05; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Quicksand", "Helvetica Neue", sans-serif; }
+
+header {
+  text-align: center;
+  border: 0;
+  background-color: #fdfdfd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(white));
+  background-image: -webkit-linear-gradient(top, #fdfdfd, white);
+  background-image: -moz-linear-gradient(top, #fdfdfd, white);
+  background-image: -ms-linear-gradient(top, #fdfdfd, white);
+  background-image: -o-linear-gradient(top, #fdfdfd, white);
+  background-image: linear-gradient(top, #fdfdfd, white);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fdfdfd', endColorStr='white'); }
+
+.navbar-top {
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0; }
+
+.brand {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color: #d70060;
+  font-family: "Quicksand", "Helvetica Neue", sans-serif; }
+
+.brand:hover {
+  text-decoration: none;
+  color: #f18d05; }
+
+.main-menu {
+  margin: 0 auto;
+  font-family: "Quicksand", "Helvetica Neue", sans-serif; }
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.main-menu ul li {
+  display: inline-block; }
+
+.main-menu ul li a {
+  display: block;
+  padding: .5em 1em;
+  color: #d70060;
+  text-transform: uppercase;
+  -webkit-transition: all, 0.5s, ease-in;
+  -khtml-transition: all, 0.5s, ease-in;
+  -moz-transition: all, 0.5s, ease-in;
+  -ms-transition: all, 0.5s, ease-in;
+  -o-transition: all, 0.5s, ease-in;
+  transition: all, 0.5s, ease-in; }
+
+.main-menu ul li a:hover {
+  text-decoration: none;
+  color: #61ae24;
+  -webkit-transition: all, 0.5s, ease-in;
+  -khtml-transition: all, 0.5s, ease-in;
+  -moz-transition: all, 0.5s, ease-in;
+  -ms-transition: all, 0.5s, ease-in;
+  -o-transition: all, 0.5s, ease-in;
+  transition: all, 0.5s, ease-in; }
+
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+  Mixins available:
+    -   css3-prefix             - arguments: Property, Value
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-horizontal   - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-radial       - arguments: Start Color: #FFFFFF, Start position: 0%, End Color: #000000, End position: 100%
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   background-opacity      - arguments: Color: #000, Opacity: .85
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Right: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   transform               - arguments: Parameters: null
+    -   transform-style         - arguments: Style: preserve-3d
+    -   transition              - Default arguments: What: all, Length: 1s, Easing: ease-in-out
+    -                            - Examples: @include transition (all 2s ease-in-out);
+    -                                        @include transition (opacity 1s ease-in 2s, width 2s ease-out);
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+    -   keyframes               - arguments: Animation name
+                                - content:   Animation css
+    -   animation               - arguments: name duration timing-function delay iteration-count direction fill-mode play-state
+                                             (http://www.w3schools.com/cssref/css3_pr_animation.asp)
+
+------------------------------------------------------------- */
+/* ADDS A BROWSER PREFIX TO THE PROPERTY */
+/* BACKGROUND GRADIENT */
+/* BACKGROUND HORIZONTAL */
+/* BACKGROUND RADIAL */
+/* BACKGROUND SIZE */
+/* BACKGROUND COLOR OPACITY */
+/* BORDER RADIUS */
+/* BOX */
+/* BOX RGBA */
+/* BOX SHADOW */
+/* BOX SIZING */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TRANSFORM  */
+/* TRANSFORM STYLE */
+/* TRANSITION */
+/* TRIPLE BORDERS */
+/* KEYFRAMES */
+/* ANIMATION */
+footer {
+  margin: 1em 0 0 0; }
+
+footer nav {
+  margin: 0;
+  padding: 0; }
+
+footer .navbar-bottom ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+footer .navbar-bottom ul li {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+footer .navbar-bottom ul li a {
+  margin: .5em 0;
+  text-decoration: none;
+  display: block;
+  font-family: "Quicksand", "Helvetica Neue", sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+  color: #61ae24;
+  -webkit-transition: all, 0.5s, ease-in;
+  -khtml-transition: all, 0.5s, ease-in;
+  -moz-transition: all, 0.5s, ease-in;
+  -ms-transition: all, 0.5s, ease-in;
+  -o-transition: all, 0.5s, ease-in;
+  transition: all, 0.5s, ease-in; }
+
+footer .navbar-bottom ul li a:hover {
+  color: #d70060;
+  -webkit-transition: all, 0.5s, ease-in;
+  -khtml-transition: all, 0.5s, ease-in;
+  -moz-transition: all, 0.5s, ease-in;
+  -ms-transition: all, 0.5s, ease-in;
+  -o-transition: all, 0.5s, ease-in;
+  transition: all, 0.5s, ease-in; }
+
+footer .col-right .copyright {
+  color: rgba(97, 174, 36, 0.4);
+  text-transform: uppercase;
+  font-size: .7em;
+  text-align: right; }
+
+footer .col-right .copyright a.telf {
+  font-size: 1.5em;
+  color: #d70060;
+  -webkit-transition: all, 0.5s, ease-in;
+  -khtml-transition: all, 0.5s, ease-in;
+  -moz-transition: all, 0.5s, ease-in;
+  -ms-transition: all, 0.5s, ease-in;
+  -o-transition: all, 0.5s, ease-in;
+  transition: all, 0.5s, ease-in; }
+
+footer .col-right .copyright a.telf:hover  {
+  color: #f18d05;
+  -webkit-transition: all, 0.5s, ease-in;
+  -khtml-transition: all, 0.5s, ease-in;
+  -moz-transition: all, 0.5s, ease-in;
+  -ms-transition: all, 0.5s, ease-in;
+  -o-transition: all, 0.5s, ease-in;
+  transition: all, 0.5s, ease-in;
+  text-decoration: none; }
+
+@media (max-width: 768px) {
+  footer .col-xs-12 {
+    text-align: center; }
+
+  footer .col-right .copyright {
+    text-align: center; } }
+
+/*# sourceMappingURL=wplatino.css.map */
