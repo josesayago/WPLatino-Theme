@@ -1,3 +1,4 @@
+	<div class="clearfix">&nbsp;</div>
 	<footer>
 		<div class="container">
 			<div class="row">

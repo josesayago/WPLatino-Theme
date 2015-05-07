@@ -1,0 +1,72 @@
+@import "mixins";
+@import "styling";
+
+
+.slp-instance-home-articles .thumbnail {
+	border: 0;
+	box-shadow: none;
+	margin: 0 0 5% 0;
+}
+.slp-instance-home-articles .thumbnail .slposts-caption h3,
+.slp-instance-home-articles .slposts-caption h3 {
+	margin: 0 0 3.5% 0;
+	border: 0;
+}
+.slp-instance-home-articles .thumbnail .slposts-caption h3 a,
+.slp-instance-home-articles .slposts-caption h3 a {
+	color: $cherry;
+	@include transition(all, .5s, ease-in);
+}
+.slp-instance-home-articles .thumbnail .slposts-caption h3 a:hover,
+.slp-instance-home-articles .slposts-caption h3 a:hover {
+	color: $orange;
+	@include transition(all, .5s, ease-in);
+}
+.slp-instance-home-articles .thumbnail img {
+	width: 100%;
+	border: 0;
+	border-radius: 0;
+	vertical-align: middle;
+	@include border-radius-separate(10px, 0, 0, 10px);
+}
+.slp-instance-home-articles .thumbnail img:hover {
+	box-shadow: none;
+}
+.slp-instance-home-articles ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.slp-instance-home-articles ul li {
+	margin: 0;
+	padding: 0;
+}
+.slposts-ulist-litem,
+.slposts-block-litem {
+	border: 0;
+}
+.slposts-ulist-excerpt,
+.slposts-block-excerpt {
+	color: $concrete;
+	text-align: left !important;
+}
+.slposts-ulist-excerpt a,
+.slposts-block-excerpt a {
+	color: $green;
+}
+.slp-pagination {
+	border: 0 !important;
+}
+.slp-pagination a,
+.slp-pagination .jp-previous,
+.slp-pagination .jp-next {
+	color: $green;
+}
+.slp-pagination .jp-current,
+.slp-pagination .jp-disabled,
+.slp-pagination .jp-current:hover,
+.slp-pagination .jp-disabled:hover {
+	color: $cherry;
+	background: $gray;
+	cursor: default;
+}
